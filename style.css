@@ -23,7 +23,7 @@ body {
 header{
     padding: 20px;
     padding-left: 0;
-    background-image: url(/素材/36227.jpg);    
+    background-image: url(./素材/36227.jpg);    
 }
 h1 {
   font-size: 24px;
@@ -34,7 +34,7 @@ h1 {
 .strong{
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url(/素材/36227.jpg);
+    background-image: url(./素材/36227.jpg);
 }
 .strength {
   background-color: #fff;
@@ -82,4 +82,5 @@ h1 {
 .imgtext{
     font-weight: bold;
     background-color: #f9e4c4;
+
 }
