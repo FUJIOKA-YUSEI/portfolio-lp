@@ -1,10 +1,85 @@
+/* *{border:solid;}  */
 body {
+  /* background-image: url(/素材/36227.jpg); */
+  background-size: cover;      /* 画面いっぱいに表示 */
+  background-position: center; /* 中央配置 */
+  background-repeat: no-repeat;/* 繰り返さない */
+  height: 100vh;
+  margin: 0;
   font-family: sans-serif;
   margin: 0;
-  padding: 40px;
   line-height: 1.6;
 }
 
+.overlay-img{
+  position: absolute; /* ヘッダー内で自由に配置 */
+  top: -20px;             /* 上からの距離 */
+  left: 0;            /* 左からの距離 */
+  width: 100%;        /* ヘッダー全体に広げる */
+  object-fit: cover;  /* 画像の縦横比を維持してフィット */
+  z-index: 0;         /* h1より後ろに表示 */
+  pointer-events: none; /* クリックを邪魔しない */
+}
+header{
+    padding: 20px;
+    padding-left: 0;
+    background-image: url(/素材/36227.jpg);    
+}
 h1 {
   font-size: 24px;
+  margin:0;
+  margin-left: 40px;
+
+}
+.strong{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(/素材/36227.jpg);
+}
+.strength {
+  background-color: #fff;
+  padding: 24px;
+  margin-left: 40px;
+  margin-right: 40px;
+  /* margin-bottom: 24px; */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.strength-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.strength-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #111;
+  background: linear-gradient(transparent 60%, #ffeaa7 60%);
+}
+.imgbox {
+  display: flex;           /* 横並びにする */
+  flex-wrap: wrap;         /* 幅が足りなければ折り返す */
+  gap: 16px;               /* 画像同士の隙間 */
+  justify-content: center; /* 真ん中揃え */
+}
+
+.imgbox img {
+  width: 150px;            /* 画像の幅を統一 */
+  height: 250px;           /* 高さも揃える */
+  object-fit: cover;       /* 画像を切り取りつつボックスにフィット */
+  border-radius: 8px;      /* 角を丸くする */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 軽い影 */
+}
+
+.imgtext{
+    font-weight: bold;
+    background-color: #f9e4c4;
 }
